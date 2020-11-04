@@ -271,16 +271,13 @@ p.description {
   margin-right: 20px;
 }
 
-/* Slick */
-.slick-dots li button {
-  border: 2px solid rgba(0, 0, 0, 0.2);
+.slick-dots li {
+  border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
 .slick-dots li button:before {
-  color: white;
-  font-size: 10px;
-  line-height: 2.1;
+  font-size: 10px !important;
 }
 
 /* STUFF and NONSENSE - */

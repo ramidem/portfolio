@@ -1,0 +1,37 @@
+/* UTILITIES */
+/* ========================================================================= */
+.container {
+  padding: 0 20px;
+  margin: 0;
+  min-width: 305px;
+  background-color: white;
+}
+
+.lg-column {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.md-column {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+#faux-div {
+  display: none;
+}

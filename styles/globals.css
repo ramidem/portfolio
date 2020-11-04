@@ -1,27 +1,391 @@
-html,
+/* DEFAULTS */
+/* ========================================================================= */
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+  font-family: "Open Sans", sans-serif;
+  color: #646464;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+a {
+  color: #1b1b1b;
+}
+
+a:hover {
+  color: #3c403c;
+}
+
+abbr[title] {
+  border-bottom: none !important;
+  cursor: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Global */
+.sections {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888888;
+  letter-spacing: 1px;
+}
+
+.btn {
+  outline: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 200ms all;
+}
+
+.btn:hover {
+  background-color: #888888;
+  color: white;
+  border: 2px solid #888888;
+}
+
+.btn-dark {
+  background-color: #3c403c;
+  color: white;
+  border: 2px solid #3c403c;
+}
+
+.btn-dark-outline {
+  background-color: transparent;
+  color: #3c403c;
+  border: 2px solid #3c403c;
+}
+
+/* HEADER */
+/* ========================================================================= */
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 50px !important;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.heading p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ABOUT */
+/* ========================================================================= */
+#greet h2 {
+  color: #3c4043;
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#greet p {
+  color: #3c4043;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#about {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+#about img {
+  float: right;
+  width: calc(100% - 180px);
+  max-width: 350px;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+/* SOCIALS */
+ul#socials {
+  float: left;
+  padding: 0;
+  margin-top: 0;
+}
+
+ul#socials li {
+  list-style: none;
+  background-color: #f3f3f3;
+  padding: 10px 0;
+  margin-right: 5px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+ul#socials li:last-child {
+  margin-right: 5px;
+}
+
+ul#socials li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #646464;
+  padding: 10px 15px;
+  transition: all 0.4s;
+}
+
+ul#socials li:hover {
+  cursor: pointer;
+}
+
+li#github a:hover {
+  color: #bdbfc0;
+  background-color: #24292e;
+}
+
+li#linkedin a:hover {
+  color: #ffffff;
+  background-color: #0a66c2;
+}
+
+li#instagram a:hover {
+  color: #ffffff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+li#twitter a:hover {
+  color: #ffffff;
+  background-color: #50abf1;
+}
+
+#linkedin,
+#twitter {
+  margin-top: 10px;
+}
+
+#bio {
+  max-width: 600px;
+}
+
+#bio p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+h3#bio-title:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   display: block;
+  background-color: #888888;
+}
+
+/* PROJECTS */
+/* ========================================================================= */
+#projects-section {
+  background-color: whitesmoke;
+  padding-bottom: 100px;
+}
+
+.projects {
+  margin-top: 50px;
+}
+
+.project-item {
+  margin-bottom: 50px;
+}
+
+.project-item img {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.project-item h3 {
+  color: #3c4043;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.project-item-description {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+p.tech {
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #888888;
+}
+
+p.description {
+  margin: 30px 0;
+}
+
+.project-item .btn {
+  margin-right: 20px;
+}
+
+/* Slick */
+.slick-dots li button {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  color: white;
+  font-size: 10px;
+  line-height: 2.1;
+}
+
+/* STUFF and NONSENSE - */
+/* ========================================================================= */
+#repos-section {
+  text-align: center;
+  background-color: white;
+}
+
+ul#stuff {
+  margin-top: 50px;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul#stuff li {
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: all 0.2s;
+  min-height: 145px;
+  position: relative;
+}
+
+ul#stuff li:hover {
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul#stuff li h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+ul#stuff li p {
+  font-size: 14px;
+  margin: 20px 0 5px 0;
+  line-height: 1.3;
+}
+
+ul#stuff li p.stuff-tech {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888888;
+  position: absolute;
+  bottom: 20px;
+}
+
+#codepen {
+  margin: 50px 0;
+}
+
+/* CONTACT */
+/* ========================================================================= */
+#contact-section {
+  background-color: #1b1b1b;
+  color: white;
+  padding-bottom: 100px;
+}
+
+#contact-section a,
+footer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#contact-section a:hover,
+footer a:hover {
+  color: #888888;
+}
+
+#contact-section h3,
+#contact-section p {
+  color: whitesmoke;
+}
+
+#contact-section p {
+  line-height: 1.5;
+}
+
+#hello {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* CONTACT */
+/* ========================================================================= */
+#footer-section {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #c1c1c1;
+  letter-spacing: 1px;
 }

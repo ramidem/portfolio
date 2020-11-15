@@ -7,12 +7,6 @@ export default function Footer() {
             <small>
               made with <abbr title="love">❤️</abbr> and lots of{" "}
               <abbr title="coffee">☕</abbr>
-              <br />
-              <a href="https://vercel.com/dashboard" target="_blank">
-                vercel
-              </a>{" "}
-              | <a href="https://nextjs.org/">next.js</a> |
-              <a href="https://github.com/ramidem/portfolio">github</a>
             </small>
           </footer>
         </div>

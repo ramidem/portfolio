@@ -8,11 +8,6 @@ export default function Bio() {
         Hi. I am Med. I am a self-taught Fullstack Web Developer from the
         Philippines.
       </p>
-      <p>
-        In June of 2020, during the highest peak of the pandemic, I took a leap
-        of faith &mdash; career shift &mdash; and attended a Coding Bootcamp so
-        I can further my knowledge in Web Development.
-      </p>
     </div>
   );
 }

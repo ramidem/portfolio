@@ -5,7 +5,7 @@ export default function Bio() {
         About
       </h3>
       <p>
-        Hi. I am Med. I am a self-taught Fullstack Web Developer from the
+        Hi. I am Med. I am a self-taught Web Developer from the
         Philippines.
       </p>
     </div>
